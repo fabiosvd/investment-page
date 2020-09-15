@@ -1,0 +1,160 @@
+////////////////////////////////////////
+// LOGO
+
+.nav-bar {
+
+    &__ul {
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: center;
+        padding: 1.5rem 0;
+        list-style: none;
+}
+    &__item {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        a {
+            text-decoration: none;
+            color: #FFF
+        }
+
+    }
+}
+.heading-tertiary {
+    font-size: 2.24rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-align: center;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    color: #333333;
+
+}
+
+.feature__logo {
+    width: 20%;
+    margin-left: 0%;
+    margin-bottom: 2rem;
+}
+
+.heading-quaternary {
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    text-align: center;
+    color: #fff;
+
+    &__courses {
+        text-transform: uppercase;
+        margin-top: 2rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+.heading-senary {
+    font-size: 1.26rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-align: center;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+.home-backgroundimage {
+    background-size: cover;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position:relative;
+}
+.about-photo {
+    width: 40%;
+    margin-left: 32%;
+    margin-bottom: 2rem;
+}
+
+.center {
+    display: flex;
+}
+
+.movingClouds {
+    position: absolute;
+    margin-top: -2rem;
+    animation-name: moveCloud;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+
+}
+
+.btn {
+    background: transparent;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1.3rem 3rem;
+    transition: all 150ms linear;
+    border-radius: .25rem;
+
+
+    &--yellow {
+    background-color: #daa520;
+    border-color: #daa520;
+    color: #FFFFFF;
+    opacity: 1;
+    }
+
+    &--black {
+        color: #191919;
+        border: 1px solid black;
+        border-radius: 3rem;
+        text-decoration: none;
+        padding: 1.3rem 1.5rem;
+    }
+
+    &--white{
+
+    }
+
+    &--round {
+
+    }
+}
+
+.credits {
+    text-align: center;
+    color: #fff;
+    font-size: 1.26rem;
+    margin-top: 10rem;
+    margin-bottom: -7rem;
+
+    a {
+        color: #daa520;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .credits {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+@keyframes moveCloud {
+    0% {
+        transform:translateX(-15%);
+    }
+
+    100% {
+        transform:translateX(-25%);
+    }
+
+}
+
